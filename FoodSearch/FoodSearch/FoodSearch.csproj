@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{4A5DC5B8-F585-4CFF-94AE-D241DBD1DD9B}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>FoodSearch</RootNamespace>
+    <AssemblyName>FoodSearch</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchUseSGen>true</MtouchUseSGen>
+    <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <MtouchTlsProvider>Default</MtouchTlsProvider>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Icon-Small.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Icon-Small%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Icon-Small%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Icon-Small-40%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Icon-Small-40%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Icon.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Icon%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Icon-60%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Icon-60%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Icon-Small-40.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Icon-Small-50.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Icon-Small-50%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Icon-72.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Icon-72%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Icon-76.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Icon-76%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcons.appiconset\Icon-167.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
+    <InterfaceDefinition Include="Main.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="ViewController.cs" />
+    <Compile Include="ViewController.designer.cs">
+      <DependentUpon>ViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResTableViewController.cs" />
+    <Compile Include="ResTableViewController.designer.cs">
+      <DependentUpon>ResTableViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FoodListController.cs" />
+    <Compile Include="FoodListController.designer.cs">
+      <DependentUpon>FoodListController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TableSource.cs" />
+    <Compile Include="FoodDetailViewController.cs" />
+    <Compile Include="FoodDetailViewController.designer.cs">
+      <DependentUpon>FoodDetailViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FoodData.cs" />
+    <Compile Include="FoodTableView.cs" />
+    <Compile Include="FoodTableView.designer.cs">
+      <DependentUpon>FoodTableView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RankFoodListController.cs" />
+    <Compile Include="RankFoodListController.designer.cs">
+      <DependentUpon>RankFoodListController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RankFoodTableSource.cs" />
+    <Compile Include="ResDetailViewController.cs" />
+    <Compile Include="ResDetailViewController.designer.cs">
+      <DependentUpon>ResDetailViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResData.cs" />
+    <Compile Include="ResSource.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\1798528_1395895480681464_505754810_n.jpg" />
+    <BundleResource Include="Resources\restaurant_0.png" />
+    <BundleResource Include="Resources\restaurant_1.png" />
+    <BundleResource Include="Resources\restaurant_2.jpg" />
+    <BundleResource Include="Resources\restaurant_3.jpg" />
+    <BundleResource Include="Resources\restaurant_4.png" />
+    <BundleResource Include="Resources\restaurant_5.jpg" />
+    <BundleResource Include="Resources\chinese_0.jpg" />
+    <BundleResource Include="Resources\chinese_1.jpg" />
+    <BundleResource Include="Resources\japanese_0.jpg" />
+    <BundleResource Include="Resources\japanese_1.jpg" />
+    <BundleResource Include="Resources\spanish_0.jpg" />
+    <BundleResource Include="Resources\spanish_1.jpg" />
+    <BundleResource Include="Resources\enviro_0.jpg" />
+    <BundleResource Include="Resources\enviro_1.jpg" />
+    <BundleResource Include="Resources\enviro_2.jpg" />
+    <BundleResource Include="Resources\enviro_3.jpeg" />
+    <BundleResource Include="Resources\enviro_4.jpg" />
+    <BundleResource Include="Resources\enviro_5.jpg" />
+    <BundleResource Include="Resources\foodbg.jpg" />
+    <BundleResource Include="Resources\yellow-rectangle-button-hi.png" />
+    <BundleResource Include="Resources\greenButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ITunesArtwork Include="iTunesArtwork%402x" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+</Project>
